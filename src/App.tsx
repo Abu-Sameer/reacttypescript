@@ -7,12 +7,14 @@
 // import { RouterProvider } from "react-router-dom";
 // import { routes } from "./Redux/NewRedux/Router";
 import Home from "./bComp/home/Home";
+import Text from "./Text";
 
 export default function App() {
   return (
     <div className="">
       {/* <RouterProvider router={routes} /> */}
       <Home />
+      <Text />
     </div>
   );
 }
