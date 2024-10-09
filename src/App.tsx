@@ -6,6 +6,7 @@
 // import { store } from "./Redux/Store/futures/Store";
 // import { RouterProvider } from "react-router-dom";
 // import { routes } from "./Redux/NewRedux/Router";
+import AddPull from "./AddPull";
 import Home from "./bComp/home/Home";
 import Text from "./Text";
 
@@ -15,6 +16,7 @@ export default function App() {
       {/* <RouterProvider router={routes} /> */}
       <Home />
       <Text />
+      <AddPull />
     </div>
   );
 }
