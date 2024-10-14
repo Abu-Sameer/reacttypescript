@@ -6,17 +6,19 @@
 // import { store } from "./Redux/Store/futures/Store";
 // import { RouterProvider } from "react-router-dom";
 // import { routes } from "./Redux/NewRedux/Router";
-import AddPull from "./AddPull";
-import Home from "./bComp/home/Home";
-import Text from "./Text";
+import Getpost from "./Redux/Getpost/Getpost";
+import { ApiProvider } from "@reduxjs/toolkit/query/react";
+import { jsonServerApi } from "./Redux/Getpost/Slice";
 
 export default function App() {
   return (
-    <div className="">
+    // <div className="">
+    <ApiProvider api={jsonServerApi}>
       {/* <RouterProvider router={routes} /> */}
-      <Home />
-      <Text />
-      <AddPull />
-    </div>
+      <Getpost />
+      <div>git</div>
+    </ApiProvider>
+
+    // </div>
   );
 }
